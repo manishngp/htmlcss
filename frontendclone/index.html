@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        .top-bar{
+            font-family: "Open Sans", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items:center ;
+            background-color: rgb(237,7,139);
+            color: #ffffff;
+            padding-left: 50px;
+            padding-right: 50px;
+ 
+        }
+        .contact-del, .social-links{
+            display: flex;
+            gap: 25px;
+        }
+        .social-links span{
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .social-links span:hover{
+            transform: rotateY(180deg);
+        }
+        .nav-bar{
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .pages-nav{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            gap: 25px;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="contact-del">
+                
+                <p> <span><i class="fa-solid fa-location-dot"></i></span> 57/A, Green Lane, NYC</p>
+                
+                <p><span><i class="fa-solid fa-phone"></i></span>  +10 (78) 367 3692</p>
+            </div>
+            <div class="social-links">
+                <span><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></span>
+                <span><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></span>
+                <span><i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i></span>
+                <span><i class="fa-brands fa-instagram" style="color: #fcfcfc;"></i></span>
+                
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <div>
+                <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/logo/logo.png.webp" alt="logo">
+            </div>
+            <div class="pages-nav">
+                <h4>Home</h4>
+                <h4>Class</h4>
+                <h4>About</h4>
+                <h4>Blog</h4>
+                <h4>Contact</h4>
+                <button>
+                    <h4>Enroll Now</h4>
+                </button>
+            </div>
+
+        </nav>
+    </header>
+    
+</body>
+</html>
