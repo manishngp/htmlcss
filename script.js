@@ -1,4 +1,4 @@
-
+  
 const qrInput = document.getElementById('qr-input');
 const dishDetailsDiv = document.getElementById('dish-details');
 
