@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Calorie Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .dish-details {
+      margin-top: 20px;
+    }
+    .item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .item button {
+      margin-left: 10px;
+    }
+    .total-calories {
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>QR Code Calorie Tracker</h1>
+    <div id="qr-reader-container">
+      <p>Scan a QR code:</p>
+      <input type="file" accept="image/*" id="qr-input" />
+    </div>
+    <div class="dish-details" id="dish-details">
+      <!-- Dish details will be dynamically inserted here -->
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsqr/1.4.0/jsQR.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
