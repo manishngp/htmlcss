@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <style>
+        body{
+            margin: 0%;
+        }
         .top-bar{
             font-family: "Open Sans", sans-serif;
             display: flex;
@@ -37,15 +40,66 @@
             padding-left: 50px;
             padding-right: 50px;
         }
-        .pages-nav{
-            font-family: Arial, Helvetica, sans-serif;
+        .pages-nav {
+            text-align: center;
+            font-family:   sans-serif;
+            color: #423F8D;
+            font-weight: 300;            
             display: flex;
             gap: 25px;
-        
+            
+            
         }
         .pages-nav a{
+            
             text-decoration: none;
         }
+        .pages-nav a:hover{
+            color: rgb(237,7,139);
+            text-decoration-line: underline;
+          
+        }
+        #enroll-now{
+           font-weight:800;
+           font-family: sans-serif;
+            height: 50px;
+            width: 120px;
+            background-color: rgb(18,217,223);
+            border: none;
+            border-radius: 50px;
+            color: #fcfcfc;
+        }
+        button:hover{
+
+            cursor: pointer;
+        }
+        .sec1{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 100%;
+            height: 700px;
+            background-image: url('1st img.jpg');
+            background-size: cover;
+             
+            
+        }
+        .sec1-div {
+            margin-left: 30px;
+            width: 45%;
+            height: 65%;
+            background-color: #fcfcfc; 
+            border-radius: 50px;
+        }
+       .sec1-div{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+       }
+       .sec1-div>div h1{
+        font-size: 38px;
+       }
 
     </style>
 </head>
@@ -66,13 +120,13 @@
                 
             </div>
         </div>
-        <nav class="nav-bar">
+        <nav class="nav-bar" >
             <div>
                 <a href="#">
                 <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/logo/logo.png.webp" alt="logo">
                 </a>    
             </div>
-            <div class="pages-nav">
+            <div class="pages-nav" >
                 <a href="#">
                    <h4>Home</h4>
                 </a>
@@ -88,13 +142,24 @@
                 <a href="#">
                    <h4>Contact</h4>
                 </a>
-                <button>
-                    <h4>Enroll Now</h4>
-                </button>
+               
+                <button id="enroll-now">Enroll Now</button>              
             </div>
 
         </nav>
     </header>
-   
+    <section>
+        <div class="sec1">
+            <div class="sec1-div">
+                <div>
+                    <h1>Quality Learning</h1>
+                    <h2>For Every Child</h2>
+                    <button>Explore Classes</button>
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </section>
+  
 </body>
 </html>
