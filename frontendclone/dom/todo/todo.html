@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            background-color: cadetblue;
+            width: 30%;
+            gap: 20px;
+            
+            align-items: start;
+            padding: 1%;
+            border-radius: 20px;
+            border: 2px solid gray;
+        }
+       
+    </style>
+</head>
+
+<form >
+    <input type="text" placeholder="enter" id="task">
+    <select id="priority">
+        <option value="">select </option>
+        <option value="High">high</option>
+        <option value="medium">Medium</option>
+        <option value="low">low</option>
+    </select>
+    <input type="submit" name="submit">
+</form>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th >task</th>
+                <th>priority</th>
+                <th>delete</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
+<script src="./todo.js" ></script>
