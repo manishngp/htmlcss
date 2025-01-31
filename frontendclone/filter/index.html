@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>applying filter</title>
+    <style>
+        #root{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            
+            max-width: 1200px;
+            gap: 2rem;
+            padding: 1rem;
+            margin: auto;
+        }
+        #root>div{
+          border: 1rem;
+          padding: 1rem;
+          border-radius: 2rem;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+        #root>div:hover{
+            background-color:thistle;
+        }
+        img{
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <input type="text" placeholder=" serch here" id="search">
+    <div id="root"> 
+
+    </div>
+</body>
+</html>
+
+<script src="./script.js"></script>
