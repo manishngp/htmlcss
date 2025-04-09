@@ -42,7 +42,7 @@ function display(data){
         const searchval =  searchterm.value;
         const searchf = searchval.toLowerCase();
 
-        const filteredprod = prdarr.filter((product)=>product.title.toLowerCase().includes(searchf));
+        const filteredprod = prdarr.filter((pro)=>pro.title.toLowerCase().includes(searchf));
         // console.log(searchterm.value);
 
         display(filteredprod);
