@@ -1,6 +1,7 @@
 
 import './App.css'
 import Reducer from './redux/reducer'
+import ThemeSwitcher from './Theme'
 
 function App() {
  
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
      <Reducer/>
+     <ThemeSwitcher/>
     </>
   )
 }
