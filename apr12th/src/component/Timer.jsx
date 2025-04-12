@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+
 let updatingTime;
 function Timer(){
     
@@ -17,6 +18,7 @@ function Timer(){
         if(select=="down" && count > 0){
             updatingTime = setInterval(()=>{setCount(prev=>prev-1)},1000)
         }
+       
 
      }
 
@@ -40,9 +42,14 @@ function Timer(){
 
 
 
-  useEffect(()=>{
-       clearInterval(updatingTime)
-  },[select])
+  useEffect(() => {
+   
+   
+    
+      clearInterval(updatingTime)
+    
+  }, [select]);
+  
 
 
     return(

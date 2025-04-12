@@ -1,6 +1,7 @@
 
 import './App.css'
-import Factorial from './component/Factorial'
+import Factorial from './component/Factorial';
+
 import Timer from './component/Timer'
 
 function App() {
@@ -8,8 +9,9 @@ function App() {
 
   return (
     <>
-      <Timer/>
-      {/* <Factorial/> */}
+      {/* <Timer/> */}
+      <Factorial/>
+      
     </>
   )
 }

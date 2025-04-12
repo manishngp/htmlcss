@@ -1,21 +1,35 @@
-import React, { useEffect } from "react";
+import React from "react";
+
 import { useState } from "react";
 
 function Factorial(){
 const [n, setn]=useState();
+const [fact, setFact]=useState();
 
 const handleChange=(e)=>{
     setn(Number(e.target.value))
 }
 
-const calculate=()=>{
-    console.log(typeof(n))
+function calF(n){
+    const facto=(n)=>{
+        if(n==0) return 1;
+        if (n==1) return 1;
+        
+        return (n*facto(n-1))
+    
+    }
+setFact(facto(n));
+
 }
+
+
+
 
     return(
         <>
         <input type="number" value={n} onChange={handleChange} />
-        <button onClick={calculate}>Calculate Factorial</button>
+        <button onClick={()=>calF(n)}>Calculate Factorial</button>
+        {fact && <p>factorial of {n} is :{fact} </p>}
         </>
     )
 
