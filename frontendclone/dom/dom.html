@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        #root{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+            font-weight: bold;
+            color:aquamarine;
+            background-color: #454d45;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="root"> nora</h1>
+    <!-- <button onclick="headingchange()">change</button> -->
+     <button id="click">change</button>
+</body>
+</html>
+<script>
+
+let change = document.getElementById("click");
+  change.addEventListener('click', headingchange);
+   function headingchange(){
+    let h1 = document.getElementById("root");
+    if(h1.innerText=="nora"){
+        h1.innerText="dimri";
+    }
+    else{
+        h1.innerText="nora";
+    }
+
+   }
+
+
+</script>

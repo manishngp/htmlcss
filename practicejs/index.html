@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <title>Dynamic Table</title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th, td {
+        padding: 8px;
+      }
+      button {
+        margin: 4px;
+      }
+    </style>
+  </head>
+  <body>
+  
+  <h2>Dynamic Table</h2>
+  
+  <table id="dataTable">
+      <thead>
+          <tr>Name</tr>
+          <tr>Email</tr>
+          <tr>Actions</tr>
+      </thead> 
+      <tbody>
+  
+      </tbody>
+  
+  </table>
+
+  
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="tableB">
+    </tbody>
+  </table>
+  
+  
+  <button onclick="addRow()">Add Row</button>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+ 
+
+<script>
+
+function addRow(){
+     const adddNrow = document.getElementById('table8');
+     adddNrow.appendChild()
+
+}
+
+//   function addRow() {
+//     const table = document.getElementById("dataTable").getElementsByTagName('tbody')[0];
+//     const newRow = table.insertRow();
+
+//     const nameCell = newRow.insertCell(0);
+//     const emailCell = newRow.insertCell(1);
+//     const actionCell = newRow.insertCell(2);
+
+//     nameCell.innerHTML = `<input type="text" placeholder="Enter name">`;
+//     emailCell.innerHTML = `<input type="email" placeholder="Enter email">`;
+//     actionCell.innerHTML = `
+//       <button onclick="editRow(this)">Edit</button>
+//       <button onclick="deleteRow(this)">Delete</button>
+//     `;
+//   }
+
+//   function editRow(button) {
+//     const row = button.parentElement.parentElement;
+//     const nameInput = row.cells[0].querySelector("input");
+//     const emailInput = row.cells[1].querySelector("input");
+
+//     nameInput.disabled = !nameInput.disabled;
+//     emailInput.disabled = !emailInput.disabled;
+//     button.textContent = nameInput.disabled ? "Edit" : "Save";
+//   }
+
+//   function deleteRow(button) {
+//     const row = button.parentElement.parentElement;
+//     row.remove();
+//   }
+</script>
+
+</body>
+</html>

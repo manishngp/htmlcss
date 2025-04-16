@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginated List</title>
+    <style>
+        .pagination-buttons {
+            margin-top: 20px;
+        }
+        .pagination-buttons button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="pagination-container"></div>
+
+    <div class="pagination-buttons">
+        <button id="prev" disabled>Previous</button>
+        <span>Page: <span id="current-page">1</span></span>
+        <button id="next">Next</button>
+    </div>
+
+    <script>
+        const numbers =  [
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+    11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
+    31, 32, 33, 34, 35, 36, 37, 38, 39, 40,
+    41, 42, 43, 44, 45, 46, 47, 48, 49, 50,
+];
+        const itemsPerPage = 10;
+        let currentPage = 1;
+
+        function renderPage(page) {
+            const start = (page - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageNumbers = numbers.slice(start, end);
+            document.getElementById('pagination-container').innerHTML = pageNumbers.join(', ');
+            document.getElementById('current-page').textContent = page;
+        }
+
+        function updateButtons() {
+            document.getElementById('prev').disabled = currentPage === 1;
+            document.getElementById('next').disabled = currentPage === Math.ceil(numbers.length / itemsPerPage);
+        }
+
+        document.getElementById('prev').addEventListener('click', () => {
+            if (currentPage > 1) {
+                currentPage--;
+                renderPage(currentPage);
+                updateButtons();
+            }
+        });
+
+        document.getElementById('next').addEventListener('click', () => {
+            if (currentPage < Math.ceil(numbers.length / itemsPerPage)) {
+                currentPage++;
+                renderPage(currentPage);
+                updateButtons();
+            }
+        });
+
+        renderPage(currentPage); 
+        updateButtons();
+    </script>
+
+</body>
+</html>
