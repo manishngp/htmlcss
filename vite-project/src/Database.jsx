@@ -36,9 +36,9 @@ export default function DataTable({ data, columns }) {
       <div >
         <label>Page Size: </label>
         <select value={pageSize} onChange={(e) => { setPageSize(Number(e.target.value))}}>
-         <option value="10">10</option>
-         <option value="25">10</option>
-         <option value="50">10</option>
+         <option value={10}>10</option>
+         <option value={25}>25</option>
+         <option value={50}>50</option>
         </select>
       </div>
       <table >
@@ -67,8 +67,10 @@ export default function DataTable({ data, columns }) {
 
       <div >
         <button onClick={() => setCurrentPage(p => p-1)} disabled={currentPage === 1}>Prev</button>
+
         <span>Page {currentPage} of {totalPages}</span>
-        <button onClick={() => setCurrentPage(p =>  p + 1)} disabled={currentPage === totalPages}>Next</button>
+       
+        <button onClick={()=>setCurrentPage(p => p+1)} disabled={currentPage === totalPages}>Next</button>
       </div>
     </div>
   );
