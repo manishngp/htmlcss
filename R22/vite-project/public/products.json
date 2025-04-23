@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Wireless Bluetooth Headphones",
+      "description": "Premium noise-cancelling headphones with 30-hour battery life",
+      "price": 199.99,
+      "image": "https://images.pexels.com/photos/3394666/pexels-photo-3394666.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "id": 2,
+      "title": "Smart Watch Series 5",
+      "description": "Water-resistant smartwatch with health monitoring features",
+      "price": 299.99,
+      "image": "https://images.pexels.com/photos/437037/pexels-photo-437037.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "id": 3,
+      "title": "Ultra HD 4K Monitor",
+      "description": "27-inch 4K monitor with HDR and wide color gamut",
+      "price": 349.99,
+      "image": "https://images.pexels.com/photos/1029757/pexels-photo-1029757.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "id": 4,
+      "title": "Mechanical Gaming Keyboard",
+      "description": "RGB backlit mechanical keyboard with customizable keys",
+      "price": 129.99,
+      "image": "https://images.pexels.com/photos/3937174/pexels-photo-3937174.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "id": 5,
+      "title": "Portable Power Bank",
+      "description": "20000mAh fast charging power bank with multiple ports",
+      "price": 49.99,
+      "image": "https://images.pexels.com/photos/5445070/pexels-photo-5445070.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "id": 6,
+      "title": "Wireless Gaming Mouse",
+      "description": "Ergonomic gaming mouse with adjustable DPI and programmable buttons",
+      "price": 79.99,
+      "image": "https://images.pexels.com/photos/1337247/pexels-photo-1337247.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "id": 7,
+      "title": "Smart Home Speaker",
+      "description": "Voice-controlled smart speaker with premium sound quality",
+      "price": 149.99,
+      "image": "https://images.pexels.com/photos/6483086/pexels-photo-6483086.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "id": 8,
+      "title": "Laptop Sleeve Case",
+      "description": "Water-resistant sleeve case for 15-inch laptops",
+      "price": 29.99,
+      "image": "https://images.pexels.com/photos/905163/pexels-photo-905163.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "id": 9,
+      "title": "External SSD Drive",
+      "description": "1TB portable SSD with USB-C connectivity",
+      "price": 159.99,
+      "image": "https://images.pexels.com/photos/4792733/pexels-photo-4792733.jpeg?auto=compress&cs=tinysrgb&w=800"
+    },
+    {
+      "id": 10,
+      "title": "Wireless Charging Pad",
+      "description": "Qi-certified wireless charging pad compatible with all devices",
+      "price": 39.99,
+      "image": "https://images.pexels.com/photos/5053743/pexels-photo-5053743.jpeg?auto=compress&cs=tinysrgb&w=800"
+    }
+  ]
+}
