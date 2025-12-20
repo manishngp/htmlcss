@@ -1,4 +1,4 @@
-use('ecommerce');
+use('productDB');
 // db.dropDatabase();
 // db.products.insertMany([
 // {
@@ -40,4 +40,15 @@ use('ecommerce');
 // createdAt: new Date() }
 // ]);
 
-db.contacts.find({}, {name:1, _id:0})
+//   db.products.find({},{name:1, _id:0})
+db.products.find({},{name:1, price:1, _id:0})
+// db.contacts.find()  
+// db.contacts.updateOne(
+//     {name :"Bob"},
+//     {$set :{phone: 2323232323}}
+// );
+
+// db.products.updateMany(
+//     {category:"Electronics"},
+//     {$inc:{stock:111}}
+// )
