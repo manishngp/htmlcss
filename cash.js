@@ -26,4 +26,8 @@
 // }
 // console.log(amount);
 
-console.log((0.1+0.1)=== 0.2)
+// console.log((0.1+0.1)=== 0.2)
+
+for (let i = 0; i < 4; i++) {
+  console.log("hello");
+}
