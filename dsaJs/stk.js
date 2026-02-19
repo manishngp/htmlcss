@@ -16,10 +16,12 @@ for(let i =0; i<s.length; i++){
        if((top === "(" && s[i] !== ")" ) || ( top === "{" && s[i] !== "}" )  || ( top === "[" && s[i] !== "]" )){
                console.log("false");
        }
-
+ 
          
         
     }
 
 }
     console.log(stk.length === 0);
+
+    // run first then give the input
