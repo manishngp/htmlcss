@@ -217,3 +217,4 @@ for(let char of str2){
     freq[char]--
 }
 console.log(true);
+console.log(true)
